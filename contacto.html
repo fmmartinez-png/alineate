@@ -23,20 +23,86 @@
     </header>
 
     <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Hablemos sobre tu próximo proyecto</h1>
+                <p>Contanos qué necesitás y diseñaremos juntos una solución de conectividad que se ajuste a tu infraestructura.</p>
+                <div class="hero-buttons">
+                    <a class="button-primary" href="servicios.html">Explorar servicios</a>
+                    <a class="button-outline" href="productos.html">Ver equipamiento</a>
+                </div>
+            </div>
+        </section>
+
         <section>
             <div class="container">
-                <h2>Contacto</h2>
-                <article class="content-block">
-                    <h3>Estamos para ayudarte</h3>
-                    <p>Completá el siguiente formulario o escribinos directamente a nuestros canales de atención.</p>
-                    <ul>
-                        <li>Correo: contacto@aalinet.com</li>
-                        <li>Teléfono: +54 11 5555 5555</li>
-                        <li>Dirección: Av. Siempre Viva 123, Buenos Aires</li>
-                    </ul>
-                    <h3>Formulario</h3>
-                    <p>Agregá tu propio formulario HTML o integrá la herramienta que utilices para gestionar consultas.</p>
-                </article>
+                <div class="section-intro reveal-on-scroll">
+                    <span class="badge">Contacto</span>
+                    <h2>Estamos para ayudarte</h2>
+                    <p>Elegí el canal que prefieras o completá el formulario para coordinar una reunión con nuestro equipo técnico.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <article class="contact-card reveal-on-scroll">
+                        <h3>Escribinos</h3>
+                        <p>Respondemos todas las consultas en menos de 24 horas hábiles.</p>
+                        <form>
+                            <div>
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
+                            </div>
+                            <div>
+                                <label for="correo">Correo electrónico</label>
+                                <input type="email" id="correo" name="correo" placeholder="tunombre@empresa.com">
+                            </div>
+                            <div>
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="+54 11 5555 5555">
+                            </div>
+                            <div>
+                                <label for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Contanos brevemente qué necesitás"></textarea>
+                            </div>
+                            <button type="submit" class="button-primary">Enviar consulta</button>
+                        </form>
+                    </article>
+
+                    <aside class="contact-info reveal-on-scroll">
+                        <h3>O si preferís, contactanos directo</h3>
+                        <ul>
+                            <li><span>Correo:</span> contacto@aalinet.com</li>
+                            <li><span>Teléfono:</span> +54 11 5555 5555</li>
+                            <li><span>Soporte técnico:</span> soporte@aalinet.com</li>
+                            <li><span>Dirección:</span> Av. Siempre Viva 123, Buenos Aires</li>
+                        </ul>
+                        <p>Atendemos de lunes a viernes de 9 a 18 h. Fuera de horario, dejá tu mensaje y te respondemos lo antes posible.</p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="section-intro reveal-on-scroll">
+                    <span class="badge">Preguntas frecuentes</span>
+                    <h2>Antes de escribirnos</h2>
+                    <p>Estas respuestas te ayudan a ganar tiempo; si necesitás más detalles, nuestro equipo está listo para ayudarte.</p>
+                </div>
+
+                <div class="highlight-grid reveal-on-scroll">
+                    <article class="highlight-card">
+                        <h3>¿Trabajan fuera de Buenos Aires?</h3>
+                        <p>Coordinamos visitas a todo el país y asistencia remota para configuraciones y soporte de guardia.</p>
+                    </article>
+                    <article class="highlight-card">
+                        <h3>¿Cuánto demora una instalación?</h3>
+                        <p>El tiempo depende del alcance. Presentamos un cronograma detallado después del relevamiento inicial.</p>
+                    </article>
+                    <article class="highlight-card">
+                        <h3>¿Ofrecen mantenimiento?</h3>
+                        <p>Sí, contamos con planes de mantenimiento preventivo y correctivo, además de monitoreo continuo.</p>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
