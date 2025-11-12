@@ -138,6 +138,29 @@ section:nth-of-type(even) {
     pointer-events: none;
 }
 
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+@media (min-width: 900px) {
+    .hero-content {
+        grid-template-columns: 1.2fr 1fr;
+    }
+}
+
+.hero-text {
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+    .hero-text {
+        text-align: left;
+    }
+}
+
 .hero h1 {
     font-family: "Poppins", "Roboto", sans-serif;
     font-size: clamp(2.6rem, 5vw, 3.6rem);
@@ -152,11 +175,83 @@ section:nth-of-type(even) {
     color: rgba(255, 255, 255, 0.9);
 }
 
+@media (min-width: 900px) {
+    .hero p {
+        margin: 0 0 2rem 0;
+    }
+}
+
 .hero .hero-buttons {
     display: flex;
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
+}
+
+@media (min-width: 900px) {
+    .hero .hero-buttons {
+        justify-content: flex-start;
+    }
+}
+
+.hero-sidebar {
+    display: grid;
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.qr-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    display: grid;
+    place-items: center;
+}
+
+.qr-code {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+}
+
+.team-list {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    padding: 1.5rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    width: 100%;
+    max-width: 220px;
+}
+
+.team-list h3 {
+    font-family: "Poppins", "Roboto", sans-serif;
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+.team-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.team-list li {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 0.95rem;
+    padding: 0.4rem 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.team-list li:last-child {
+    border-bottom: none;
 }
 
 .button-primary,
